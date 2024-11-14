@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Acceso a base de datos</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script type="module" src="lib/js/consumeJson.js"></script>
+    <script type="module" src="lib/js/muestraObjeto.js"></script>
+    <script type="module" src="lib/js/muestraError.js"></script>
+</head>
+
+<body onload="consumeJson('srv/utiless.PHP')
+   .then(respuesta => muestraObjeto(document, respuesta.body))
+   .catch(muestraError)" class="container mt-5">
+
+    <h1 class="text-center">UTILES</h1>
+    <br>
+
+    <p class="text-center"><a href="agrega.html" class="btn btn-primary">Agregar</a></p>
+
+    <dl id="tabla" class="table-responsive">
+        <progress max="100">Cargando&hellip;</progress>
+    </dñ>
+
+    <footer class="text-center mt-5"></footer>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
