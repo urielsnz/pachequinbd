@@ -1,0 +1,18 @@
+{
+ "compilerOptions": {
+  "checkJs": true,
+  "strictNullChecks": true,
+  "target": "ES6",
+  "module": "Node16",
+  "moduleResolution": "Node16",
+  "lib": [
+   "ES2017",
+   "WebWorker",
+   "DOM"
+  ]
+ },
+ "exclude": [
+  "node_modules",
+  "dist"
+ ]
+}
